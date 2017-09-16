@@ -19,7 +19,7 @@ class CreateQuestionsTable extends Migration
             $table->text('question');
             $table->text('correct_answer');
             $table->text('answers');
-            $table->integer('answerable');
+            $table->integer('answerable')->default(1);
             $table->timestamps();
         });
     }
